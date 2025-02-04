@@ -1,61 +1,142 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Aditya Chauhan - Dark Professional</title>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <!-- Header with Updated Navbar -->
-  <header>
-    <nav class="navbar">
-      <div class="container nav-container">
-        <div class="logo">
-          <a href="#">Aditya Chauhan</a>
-        </div>
-        <ul class="nav-menu">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#certificates">Certificates</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-overlay"></div>
-      <div class="hero-content container">
-        <h1>Aditya Chauhan</h1>
-        <p class="tagline">Futuristic Cyber Security Expert</p>
-        <a href="#contact" class="cta-button">Hire Me</a>
-      </div>
-    </section>
-  </header>
-  
-  <!-- Main Content (Add your sections here) -->
-  <main class="container">
-    <section id="about" class="section">
-      <h2>About Me</h2>
-      <p>I specialize in advanced penetration testing, employing cutting-edge methods to secure digital systems in a dark cyber landscape.</p>
-    </section>
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:adichauhan460@gmail.com">adichauhan460@gmail.com</a></p>
-    </section>
-  </main>
-  
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Aditya Chauhan. All Rights Reserved.</p>
-    </div>
-  </footer>
-</body>
-</html>
+/* Variables */
+:root {
+  --bg-dark: #121212;
+  --primary-color: #1f1f1f;
+  --accent-color: #00e6e6;
+  --text-light: #e0e0e0;
+  --font-sans: 'Montserrat', sans-serif;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-sans);
+  background: var(--bg-dark);
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Updated Navbar for Sleek Dark Professional */
+.navbar {
+  background: rgba(15, 15, 15, 0.9);
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid var(--accent-color);
+  backdrop-filter: blur(6px);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  color: var(--accent-color);
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+}
+
+.nav-menu li {
+  margin-left: 25px;
+}
+
+.nav-menu a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: var(--accent-color);
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url('images/pexels-pixabay-60504.jpg') center/cover no-repeat;
+  position: relative;
+  margin-top: 70px;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: var(--text-light);
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hero-content h1 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+}
+.hero-content .tagline {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+.cta-button {
+  background: var(--accent-color);
+  padding: 12px 30px;
+  color: var(--bg-dark);
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.cta-button:hover {
+  background: #00b3b3;
+}
+
+/* Sections */
+.section {
+  padding: 60px 0;
+  text-align: center;
+}
+.section h2 {
+  font-size: 2.5em;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+}
+.section p {
+  max-width: 800px;
+  margin: 20px auto;
+  font-size: 1.1em;
+}
+
+/* Footer */
+footer {
+  background: var(--primary-color);
+  padding: 20px 0;
+  text-align: center;
+  color: var(--text-light);
+  font-size: 0.9em;
+}
