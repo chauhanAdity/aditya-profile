@@ -181,13 +181,28 @@
       </div>
     </section>
     
-    <!-- Contact Section -->
-    <section id="contact" class="section">
+    <!-- Updated Contact Section with Side-by-Side Layout -->
+    <section id="contact" class="section contact-section">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:adichauhan460@gmail.com">adichauhan460@gmail.com</a></p>
-      <p>Phone: <a href="tel:07826750933">07826750933</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/aditya-chauhan-5bb650180/" target="_blank">Connect with Me</a></p>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p>Email: <a href="mailto:adichauhan460@gmail.com">adichauhan460@gmail.com</a></p>
+          <p>Phone: <a href="tel:07826750933">07826750933</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/aditya-chauhan-5bb650180/" target="_blank">Connect with Me</a></p>
+        </div>
+        <div class="contact-form">
+          <h3>Send a Message</h3>
+          <form action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="_replyto" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
     </section>
+    
   </main>
   
   <!-- Footer -->
