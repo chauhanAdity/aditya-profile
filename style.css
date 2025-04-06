@@ -167,6 +167,19 @@ body {
   color: #ff00c8;
 }
 
+/* Corrected certificate links */
+.certificates .card-content a[href*="ECC-LPTM-Certificate%20(1).pdf"] {
+  href: "images/ECC-LPTM-Certificate.pdf";
+}
+
+.certificates .card-content a[href*="ECC-CPENT-Certificate%20(1).pdf"] {
+  href: "images/ECC-CPENT-Certificate.pdf";
+}
+
+.certificates .card-content a[href*="Cybersecurity_analyst_ibm.pdf"] {
+  href: "images/Cybersecurity-analyst-IBM.pdf";
+}
+
 /* Contact */
 .contact-container {
   display: grid;
