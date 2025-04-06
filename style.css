@@ -63,7 +63,7 @@ body {
 .hero {
   position: relative;
   height: 90vh;
-  background: linear-gradient(rgba(13, 13, 13, 0.8), rgba(13, 13, 13, 0.8)), url('images/hero-bg.jpg') center/cover no-repeat;
+  background: linear-gradient(rgba(13, 13, 13, 0.8), rgba(13, 13, 13, 0.8)), url('images/pexels-pixabay-60504.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -168,11 +168,11 @@ body {
 }
 
 /* Corrected certificate links */
-.certificates .card-content a[href*="ECC-LPTM-Certificate%20(1).pdf"] {
+.certificates .card-content a[href*="ECC-LPTM-Certificate(1).pdf"] {
   href: "images/ECC-LPTM-Certificate.pdf";
 }
 
-.certificates .card-content a[href*="ECC-CPENT-Certificate%20(1).pdf"] {
+.certificates .card-content a[href*="ECC-CPENT-Certificate(1).pdf"] {
   href: "images/ECC-CPENT-Certificate.pdf";
 }
 
